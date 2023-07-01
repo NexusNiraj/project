@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: url(./images/developer.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text {
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.text h2 {
+  font-size: 40px;
+}
+.text span {
+  font-size: 20px;
+}
+.mid_text {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.mid_text span {
+  font-size: 25px;
+}
+.work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 10px;
+}
+.item_contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 320px;
+  height: 350px;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px gray;
+  transition: 0.4s ease-in;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.card h2 {
+  margin: 15px;
+  text-align: center;
+}
+.last_content {
+  display: flex;
+  padding: 5px;
+}
+.contact {
+  background-color: rgb(9, 175, 73);
+  color: white;
+  width: 50%;
+  padding: 10px;
+}
+.about {
+  background-color: rgb(42, 19, 172);
+  color: white;
+  width: 50%;
+  padding: 10px;
+}
+.about span {
+  color: red;
+}
+.contact h3,
+.about h3 {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .container {
+    min: height 70vh;
+  }
+  .text h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text span {
+    font-size: 15px;
+    line-height: 10px;
+  }
+  .work {
+    margin: 2px auto;
+    gap: 10px;
+  }
+  .item_content {
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .last_content {
+    flex-direction: column;
+  }
+  .contact h3,
+  .about h3 {
+    font-size: 10px;
+  }
+  .contact p,
+  .about p {
+    font-size: 5px;
+  }
+}
